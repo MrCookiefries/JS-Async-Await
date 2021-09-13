@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Facts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <main class="section">
+        <h1 class="title has-text-primary is-1">Number facts</h1>
+        <section class="container">
+            <ul class="box content">
+                <li>Fav num</li>
+                <ul id="fav-num-facts"></ul>
+                <li>Other facts</li>
+                <ul id="other-nums-facts"></ul>
+            </ul>
+        </section>
+        <h2 class="subtitle has-text-primary is-3 mt-4">Number forms</h2>
+        <section class="container">
+            <form class="box" id="fav-num-form">
+                <div class="field">
+                    <label class="label" for="fav-num">Favorite number</label>
+                    <div class="control">
+                        <input class="input" id="fav-num" type="number" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button" type="submit">Get Fact</button>
+                    </div>
+                </div>
+            </form>
+            <form class="box" id="other-nums-form">
+                <div class="field">
+                    <label class="label" for="start-num">Start number range</label>
+                    <div class="control">
+                        <input class="input" type="number" id="start-num" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="end-num">End number range</label>
+                    <div class="control">
+                        <input class="input" type="number" id="end-num" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="other-num">Other number</label>
+                    <div class="control">
+                        <input class="input" type="number" id="other-num" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button" type="submit">Get Facts</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js" integrity="sha512-lTLt+W7MrmDfKam+r3D2LURu0F47a3QaW5nF0c6Hl0JDZ57ruei+ovbg7BrZ+0bjVJ5YgzsAWE+RreERbpPE1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
